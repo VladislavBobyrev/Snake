@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  background: #000000;
+  overflow: hidden;
+  cursor: none;
+}
+
+.previev {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.3fr 0.3fr 0.3fr;
+      grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  color: #aa0aff;
+}
+
+.previev .naming {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.previev .ypravlenie {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.previev .started {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.hidden {
+  display: none;
+}
+
+.audio {
+  color: rgba(21, 255, 0, 0.549);
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+audio {
+  width: 100px;
+  opacity: .3;
+  height: 20px;
+  -webkit-box-shadow: 0px 0px 10px 5px #07059d;
+          box-shadow: 0px 0px 10px 5px #07059d;
+  border-radius: 5px;
+}
